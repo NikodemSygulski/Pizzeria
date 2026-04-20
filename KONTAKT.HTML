@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="Pizza.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body id="CONTACT">
+    <div id="header">
+        <img src="images/logo.png" alt="logo">
+    </div>
+</div>
+<div id="header">
+
+    <p class="hungry"><text>Napisz do nas!</text><br> Dowiedz się więcej pisząc do nas.
+    <br><br><a class="see-more-btn" href="#read-more">ZOBACZ WIĘCEJ</a></p>
+
+    <ul class="contact">
+        <li><a href="START.HTML">START</a></li>
+        <li><a href="O NAS.HTML">O NAS</a></li>
+        <li><a href="MENU.HTML">MENU</a></li>
+        <li><a href="BLOG.HTML">BLOG</a></li>
+        <li><a href="KONTAKT.HTML">KONTAKT</a></li>
+    </ul>
+
+</div> <section id="read-more"></section>
+    
+    <br><p class="newsletter">Napisz do nas</p><br><br><br> </section>
+    <input class="name" type="text" placeholder="Podaj imię">
+    <input class="email" type="email" placeholder="Twój e-mail">
+    <textarea class="write" placeholder="Wpisz swoją wiadomość"></textarea><br>
+    <input class="send" type="submit">
+
+    <br><br><center><hr></center><br><br>
+
+    <div class="map-container">
+        <div id="mapid" class="map"></div>
+    </div>
+    <br><br>
+
+    <div id="footer">
+        <br><br><p class="newsletter">SPRAWDŹ NASZ NEWSLETTER</p><br><br>
+        <input type="email" placeholder="  Podaj swój e-mail">
+        <button class="subscribe-btn">Zapisz się</button>
+
+        <br><br><br>
+        <a href="https://www.x.com"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/RestauracjaSi/"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://pl.pinterest.com/pin/restauracja-si-si-ristorante-amp-coctail-bar-si-restauracje-warszawa-restauracja-plac-bankowy-woska-restauracja-pizza--381117187202575012/"><img src="images/pinterest.png" alt="Pinterest"></a>
+        <br>
+        <br><p>Restauracja &copy; 2017 | Wszelkie prawa zastrzeżone</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        
+        var map = L.map('mapid').setView([52.24143477198952, 21.003396026601352], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        var marker = L.marker([52.24143477198952, 21.003396026601352]).addTo(map);
+        marker.bindPopup("<center><b>Restauracja SI</b></center>Warszawa, ulica Marszałkowska 115").openPopup();
+    </script>
+</body>
+</html>
