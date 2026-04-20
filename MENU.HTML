@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="Pizza.css">
+  <title>Interaktywny Koszyk</title>
+</head>
+<body id="MENU">
+
+  <div id="image">
+    <img src="images/logo.png" alt="logo">
+  </div>
+
+  <div id="header">
+    <p class="hungry"><text>Zamów u nas!</text><br> Tutaj zamówisz co tylko chcesz.
+    <br><br><a class="see-more-btn" href="#see-menu">ZOBACZ MENU</a></p>
+    <ul class="contact">
+        <li><a href="START.HTML">START</a></li>
+        <li><a href="O NAS.HTML">O NAS</a></li>
+        <li><a href="MENU.HTML">MENU</a></li>
+        <li><a href="BLOG.HTML">BLOG</a></li>
+        <li><a href="KONTAKT.HTML">KONTAKT</a></li>
+    </ul>
+  </div>
+
+  <div class="cart">
+    <h3>Twój koszyk:</h3><hr><br>
+    <ul id="cartItems"></ul>
+    <p id="total">Suma: 0 PLN</p>
+  </div>
+
+  <!--DANIA GŁÓWNE-->
+  <section id="see-menu">
+    <h3 class="main-dishes">Dania główne:</h3>
+    <div class="menu-buying">
+      <div>
+        <img src="zdjęcia potraw/Pizza.jpg" alt="Pizza" />
+        <label>Pizza (40 PLN):</label>
+        <span id="pizzaQuantity">0</span>
+        <button onclick="addToCart('pizza', 40)">Dodaj</button>
+      </div>
+      <div>
+        <img src="zdjęcia potraw/pierogi.jpg" alt="Pierogi" />
+        <label>Pierogi (18 PLN):</label>
+        <span id="pierogiQuantity">0</span>
+        <button onclick="addToCart('pierogi', 18)">Dodaj</button>
+      </div>
+      <div>
+        <img src="zdjęcia potraw/bigos.jpg" alt="Bigos" />
+        <label>Bigos (25 PLN):</label>
+        <span id="bigosQuantity">0</span>
+        <button onclick="addToCart('bigos', 25)">Dodaj</button>
+      </div>
+      <div>
+        <img src="zdjęcia potraw/lasania.jpg" alt="Lasania" />
+        <label>Lasania (30 PLN):</label>
+        <span id="lasaniaQuantity">0</span>
+        <button onclick="addToCart('lasania', 30)">Dodaj</button>
+      </div>
+      <div>
+        <img src="zdjęcia potraw/zapiekanka.jpg" alt="Zapiekanka" />
+        <label>Zapiekanka (22 PLN):</label>
+        <span id="zapiekankaQuantity">0</span>
+        <button onclick="addToCart('zapiekanka', 22)">Dodaj</button>
+      </div>
+      <div>
+        <img src="zdjęcia potraw/kurczak.jpg" alt="Kurczak" />
+        <label>Kurczak (28 PLN):</label>
+        <span id="kurczakQuantity">0</span>
+        <button onclick="addToCart('kurczak', 28)">Dodaj</button>
+      </div>
+    </div>
+  </section>
+
+  <!--ZUPY-->
+  <h3 class="Soups">Zupy i tradycyjne dania:</h3>
+  <div class="menu-buying">
+    <div>
+      <img src="zdjęcia potraw/Grzybowa.jpg" alt="Grzybowa" />
+      <label>Grzybowa (26 PLN):</label>
+      <span id="grzybowaQuantity">0</span>
+      <button onclick="addToCart('grzybowa', 26)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Barszcz czerwony.jpeg" alt="Barszcz czerwony" />
+      <label>Barszcz czerwony (16 PLN):</label>
+      <span id="barszczQuantity">0</span>
+      <button onclick="addToCart('barszcz', 16)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Flaki.jpg" alt="Flaki" />
+      <label>Flaki (24 PLN):</label>
+      <span id="flakiQuantity">0</span>
+      <button onclick="addToCart('flaki', 24)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Gołąbki.jpg" alt="Gołąbki" />
+      <label>Gołąbki (22 PLN):</label>
+      <span id="golabkiQuantity">0</span>
+      <button onclick="addToCart('golabki', 22)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Kapuśniak.jpg" alt="Kapuśniak" />
+      <label>Kapuśniak (20 PLN):</label>
+      <span id="kapusniakQuantity">0</span>
+      <button onclick="addToCart('kapusniak', 20)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Kotlet schabowy.jpg" alt="Kotlet schabowy" />
+      <label>Kotlet schabowy (29 PLN):</label>
+      <span id="schabowyQuantity">0</span>
+      <button onclick="addToCart('schabowy', 29)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Rolada śląska.jpg" alt="Rolada śląska" />
+      <label>Rolada śląska (32 PLN):</label>
+      <span id="roladaQuantity">0</span>
+      <button onclick="addToCart('rolada', 32)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Żurek.jpg" alt="Żurek" />
+      <label>Żurek (21 PLN):</label>
+      <span id="zurekQuantity">0</span>
+      <button onclick="addToCart('zurek', 21)">Dodaj</button>
+    </div>
+  </div>
+
+  <!--NAPOJE-->
+  <h3 class="Drinks">Napoje:</h3>
+  <div class="menu-buying">
+    <div>
+      <img src="zdjęcia potraw/Herbata z cytryną.jpg" alt="Herbata" />
+      <label>Herbata z cytryną (8 PLN):</label>
+      <span id="herbataQuantity">0</span>
+      <button onclick="addToCart('herbata', 8)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Kawa zbożowa.jpg" alt="Kawa" />
+      <label>Kawa zbożowa (9 PLN):</label>
+      <span id="kawazbozowaQuantity">0</span>
+      <button onclick="addToCart('kawazbozowa', 9)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Kompot z suszu.jpg" alt="Kompot" />
+      <label>Kompot z suszu (10 PLN):</label>
+      <span id="kompotQuantity">0</span>
+      <button onclick="addToCart('kompot', 10)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Lemoniada domowa.jpg" alt="Lemoniada" />
+      <label>Lemoniada domowa (9 PLN):</label>
+      <span id="lemoniadaQuantity">0</span>
+      <button onclick="addToCart('lemoniada', 9)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Oranżada.jpeg" alt="Oranżada" />
+      <label>Oranżada (6 PLN):</label>
+      <span id="oranzadaQuantity">0</span>
+      <button onclick="addToCart('oranzada', 6)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Woda z sokiem malinowym.jpg" alt="Woda" />
+      <label>Woda z sokiem malinowym (5 PLN):</label>
+      <span id="wodazsokiemQuantity">0</span>
+      <button onclick="addToCart('wodazsokiem', 5)">Dodaj</button>
+    </div>
+  </div>
+
+  <!--DESERY-->
+  <h3 class="Desserts">Desery:</h3>
+  <div class="menu-buying">
+    <div>
+      <img src="zdjęcia potraw/Szarlotka.JPG" alt="Szarlotka" />
+      <label>Szarlotka (14 PLN):</label>
+      <span id="szarlotkaQuantity">0</span>
+      <button onclick="addToCart('szarlotka', 14)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Sernik.jpg" alt="Sernik" />
+      <label>Sernik (15 PLN):</label>
+      <span id="sernikQuantity">0</span>
+      <button onclick="addToCart('sernik', 15)">Dodaj</button>
+    </div>
+    <div>
+      <img src="zdjęcia potraw/Makowiec.jpg" alt="Makowiec" />
+      <label>Makowiec (13 PLN):</label>
+      <span id="makowiecQuantity">0</span>
+      <button onclick="addToCart('makowiec', 13)">Dodaj</button>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p><br>Restauracja &copy; 2017 | Wszelkie prawa zastrzeżone</p><br>
+  </div>
+
+  <script>
+    const cart = {};
+
+    const productNames = {
+      pizza: "Pizza", pierogi: "Pierogi", bigos: "Bigos", lasania: "Lasania",
+      zapiekanka: "Zapiekanka", kurczak: "Kurczak", grzybowa: "Grzybowa",
+      barszcz: "Barszcz czerwony", flaki: "Flaki", golabki: "Gołąbki",
+      kapusniak: "Kapuśniak", schabowy: "Kotlet schabowy", rolada: "Rolada śląska",
+      zurek: "Żurek", herbata: "Herbata z cytryną", kawazbozowa: "Kawa zbożowa",
+      kompot: "Kompot z suszu", lemoniada: "Lemoniada domowa", oranzada: "Oranżada",
+      wodazsokiem: "Woda z sokiem malinowym", szarlotka: "Szarlotka",
+      sernik: "Sernik", makowiec: "Makowiec"
+    };
+
+    function addToCart(product, price) {
+      if (!cart[product]) {
+        cart[product] = { quantity: 1, price };
+      } else {
+        cart[product].quantity++;
+      }
+      updateCart();
+    }
+
+    function removeFromCart(product) {
+      if (cart[product]) {
+        cart[product].quantity--;
+        if (cart[product].quantity <= 0) {
+          delete cart[product];
+        }
+        updateCart();
+      }
+    }
+
+    function updateCart() {
+      const cartList = document.getElementById('cartItems');
+      cartList.innerHTML = '';
+      let total = 0;
+
+      for (let key in productNames) {
+        const qtySpan = document.getElementById(key + 'Quantity');
+        if (qtySpan) qtySpan.innerText = '0';
+      }
+
+      for (let product in cart) {
+        const item = cart[product];
+        total += item.quantity * item.price;
+
+        const li = document.createElement('li');
+        const fullName = productNames[product] || product;
+        li.innerHTML = `${fullName} x${item.quantity} - ${item.quantity * item.price} PLN 
+          <button onclick="removeFromCart('${product}')">Usuń</button>`;
+        cartList.appendChild(li);
+
+        const qtySpan = document.getElementById(product + 'Quantity');
+        if (qtySpan) qtySpan.innerText = item.quantity;
+      }
+
+      document.getElementById('total').innerText = 'Suma: ' + total + ' PLN';
+    }
+  </script>
+</body>
+</html>

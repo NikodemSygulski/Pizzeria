@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bold {
+    color: orangered;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.bold2 {
+    color: orangered;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#main {
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(233, 203, 122);
+}
+
+#footer {
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#footer button {
+    text-align: center;
+    background-color: gray;
+    color: white;
+    width: 20%;
+    height: 60px;
+    margin-left: 2%;
+}
+
+#footer input {
+    background-color: white;
+    color: gray;
+    width: 60%;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 25px;
+}
+
+#footer a, #footer p {
+    color: gray;
+}
+
+.subscribe-btn {
+    background-color: orangered;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.subscribe-btn:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+}
+
+#header {
+    font-size: 20px;
+    background-color: orangered;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#image {
+    background-color: orangered;
+    text-align: center;
+}
+
+.image2 {
+    padding-left: 15px;
+}
+
+.pizza {
+    background-image: url(images/desen_tlo.jpg);
+    height: 450px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hungry {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    background-image: url(images/header_photo_big.jpg);
+    height: 600px;
+    align-content: center;
+    margin-top: -10px;
+}
+
+.hungry text {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    height: 600px;
+    align-content: center;
+}
+
+.hungry button {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background: none;
+    height: 50px;
+    width: 230px;
+    border: 2px solid white;
+}
+
+.hungry a {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background: none;
+    text-decoration: none;
+}
+
+.contact {
+    list-style-type: none;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.contact a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.contact li {
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.see-more-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.see-more-btn:hover {
+    background-color: white;
+    color: orangered;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact {
+    list-style-type: none;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin: 0;
+    clear: both;
+}
+
+.contact li {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.contact a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid orangered;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact a:hover,
+#CONTACT .send:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+
+#CONTACT > img {
+    align-items: center;
+    background-color: orangered;
+}
+
+#CONTACT {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(233, 203, 122);
+}
+
+#CONTACT > .newsletter {
+    color: orangered;
+}
+
+#CONTACT > .name,
+#CONTACT > .email,
+#CONTACT > .write {
+    text-align: center;
+    width: 55%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+#CONTACT > .name:hover,
+#CONTACT > .email:hover,
+#CONTACT > .write:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5)
+}
+
+#CONTACT .write {
+    height: 120px;
+}
+
+#CONTACT > .send {
+    border: 0;
+    color: white;
+    width: 15%;
+    height: 50px;
+    background-color: orangered;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border-radius: 20px;
+    border: 1px solid orangered;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5)
+}
+
+
+#CONTACT > .map {
+    border: solid 1px black;
+    width: 650px;
+    height: 650px;
+}
+
+#CONTACT > hr {
+    width: 10px;
+}
+
+
+.map-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 650px;
+    margin: 0 auto; 
+}
+
+#mapid {
+    border: solid 1px black;
+    width: 1150px;      
+    height: 650px;         
+}
+
+
+
+#MENU {
+    background-color: rgb(233, 203, 122);
+    padding: 0;
+}
+
+#MENU .menu-buying {
+    width: 72%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+#MENU .menu-buying div {
+    display: inline-block;
+    width: 28%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff4e5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#MENU .main-dishes,#MENU .Soups,#MENU .Drinks,#MENU .Desserts {
+    font-size: 50px;
+    color: rgb(42, 42, 42);
+}
+
+#MENU .main-dishes { 
+    padding-left: 28.3%; 
+}
+#MENU .Soups       { 
+    padding-left: 22.2%; 
+}
+#MENU .Drinks      { 
+    padding-left: 31.7%; 
+}
+#MENU .Desserts    { 
+    padding-left: 31.5%; 
+}
+
+#MENU .menu-buying img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.menu-buying div img {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    min-height: 280px;
+    object-fit: cover;
+}
+
+#MENU .menu-buying > label {
+    padding-top: 10%;
+}
+
+#MENU .menu-buying button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 5px 0 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#MENU .menu-buying button:hover {
+    background-color: darkorange;
+}
+
+#MENU .menu-buying span {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: orangered;
+}
+
+#MENU .cart {
+    text-align: center;
+    float: right;
+    width: 25%;
+    background-color: #fff7f0;
+    border-left: 2px solid #ffcc99;
+    border-top: 2px solid #ffcc99;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#MENU .cart h3 {
+    font-size: 25px;
+    text-align: center;
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+#MENU .cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#MENU .cart li {
+    background-color: #fff1e0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#MENU .cart li button {
+    background-color: crimson;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+#MENU .cart li button:hover {
+    background-color: darkred;
+}
+
+#MENU .total-container {
+    background-color: orangered;
+    padding: 15px;
+    color: white;
+    margin-top: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#ABOUT-US .bold-img{
+    border-radius: 55px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#BLOG .image2 {
+    width: 700px;
+    height: auto;
+    max-height: 480px;
+    min-height: 470px;
+    object-fit: cover;
+}
+
+#CONTACT>textarea{
+    max-width: 55%;
+    min-width: 55%;
+    min-height: 50px;
+    max-height: 630px;
+    font-size: 24px;
+}
